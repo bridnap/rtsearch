@@ -65,7 +65,7 @@
 <script id="search-form-template" type="text/x-handlebars-template">
     <div class="form-group">
         <form id="search-form">
-            <input type="text" name="query" id="query" class="form-control input-large input-food" placeholder="Slow Carb Search">
+            <input type="text" name="query" id="query" class="form-control input-large input-food" placeholder="Search Banks by Routing Number">
         </form>
     </div>
 </script>
@@ -73,14 +73,11 @@
 <script id="results-template" type="text/x-handlebars-template">
     {{#if allowed}}
         <span class="allowed">
-            <strong><span>{{name}}</span></strong> is allowed on the Slow Carb Diet
-            {{#if allowed_in_moderation}}
-                but only in moderation.
-            {{/if}}
+            <strong>RT <span>{{name}}</span></strong> belongs to:<br/> {{allowed_in_moderation}}
         </span>
     {{else}}
         <span class="not-allowed">
-            <strong><span>{{name}}</span></strong> is not allowed on the Slow Carb Diet
+            <strong><span>RT {{name}}</span></strong> was not found in our database.  Try again!
         </span>
     {{/if}}
 </script>
