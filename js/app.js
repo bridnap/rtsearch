@@ -1,13 +1,13 @@
 var App = {
-    foods: [],
-    dataUrl: 'http://bridnap.github.io/rtsearch/data/foods.json',
+    banks: [],
+    dataUrl: 'http://bridnap.github.io/rtsearch/data/banks.json',
     init: function () {
         this.fetchFoods();
     },
-    fetchFoods: function() {
+    fetchBanks: function() {
         var self = this;
         $.get(self.dataUrl).done(function(response) {
-            self.foods = response;
+            self.banks = response;
             self.showForm();
             self.bindEvents();
         }).fail(function(response) {
@@ -63,7 +63,7 @@ var App = {
             allowed_in_moderation: false
         };
 
-        var results = App.foods.filter(function(food) {
+        var results = App.banks.filter(function(food) {
             return (query.toLowerCase() == food.name.toLowerCase());
         });
 
