@@ -55,22 +55,22 @@ input[type="text"]:focus {
     outline: 0 none;
 }
 
-.input-food::-webkit-input-placeholder::before { 
+.input-banks::-webkit-input-placeholder::before { 
     font-family: fontAwesome;
     content:'\f0f5   '; 
 }
 
-.input-food::-moz-placeholder::before  { 
+.input-banks::-moz-placeholder::before  { 
     font-family: fontAwesome;
     content:'\f0f5   ';
 }
 
-.input-food:-ms-input-placeholder::before  {
+.input-banks:-ms-input-placeholder::before  {
     font-family: fontAwesome;
     content:'\f0f5   ';
 }
 
-input.input-food:-moz-placeholder::before  {
+input.input-banks:-moz-placeholder::before  {
     font-family: fontAwesome;
     content:'\f0f5   ';
 }
