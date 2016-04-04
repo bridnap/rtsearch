@@ -1,6 +1,6 @@
 var App = {
     foods: [],
-    dataUrl: 'http://joefearnley.com/slow-carb-search/data/foods.json',
+    dataUrl: 'http://bridnap.github.io/rtsearch/data/foods.json',
     init: function () {
         this.fetchFoods();
     },
