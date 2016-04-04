@@ -1,6 +1,6 @@
 var App = {
     foods: [],
-    dataUrl: 'http://bridnap.github.io/rtsearch/data/foods.json',
+    dataUrl: 'http://bridnap.github.io/rtnumbersearch/data/foods.json',
     init: function () {
         this.fetchFoods();
     },
@@ -11,7 +11,7 @@ var App = {
             self.showForm();
             self.bindEvents();
         }).fail(function(response) {
-            console.log('Error fetching foods: ' + response.resposeText);
+            console.log('Error fetching Routing Number: ' + response.resposeText);
         });
     },
     bindEvents: function () {

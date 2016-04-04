@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Search for bank names based on their Routing Number or RT">
-    <meta name="author" content="Brian Plunkett">
-    <title>Routing Number Search</title>
+    <meta name="description" content="Search for foods allowed on the Slow Carb Diet">
+    <meta name="author" content="Joe Fearnley">
+    <title>Slow Carb Search</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -22,8 +22,16 @@
     </button>
     <div id="info">
         <p>
+            <a href="http://en.wikipedia.org/wiki/Slow-Carb_Diet" target="_blank">The Slow Carb Diet</a>
+            is a diet created by <a href="http://en.wikipedia.org/wiki/Timothy_Ferriss" target="_blank">Tim
+            Ferris</a>. It was first intro in
+            <a href="http://fourhourworkweek.com/2007/04/06/how-to-lose-20-lbs-of-fat-in-30-days-without-doing-any-exercise/" target="_blank">
+            a blog post</a> then popularised in his book <em><a href="http://en.wikipedia.org/wiki/The_4-Hour_Body" target="_blank">
+            The 4-hour Body</a></em>.</p>
+        <p>
+            This site is an attempt to let people easily find what is allowed on the diet.
             The source code for this site is
-            <a href="https://github.com/bridnap/rtsearch" target="_blank">on Github</a>
+            <a href="https://github.com/joefearnley/slow-carb-search" target="_blank">on Github</a>
         </p>
 </div>
 
@@ -33,7 +41,7 @@
             <div class="row">
                 <div id="form" class="col-md-6 col-md-offset-3">
                     <h1>
-    <i class="fa fa-cog fa-spin"></i>
+                        <i class="fa fa-cog fa-spin"></i>
                     </h1>
                 </div>
             </div>
@@ -51,7 +59,7 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <div>
-                    <a href="https://github.com/bridnap/rtsearch" target="_blank">
+                    <a href="https://github.com/joefearnley/slow-carb-search" target="_blank">
                         <i id="github-link" class="fa fa-github fa-2x"></i>
                     </a>
                 </div>
@@ -63,7 +71,7 @@
 <script id="search-form-template" type="text/x-handlebars-template">
     <div class="form-group">
         <form id="search-form">
-            <input type="text" name="query" id="query" class="form-control input-large input-food" placeholder="Enter an RT">
+            <input type="text" name="query" id="query" class="form-control input-large input-food" placeholder="Slow Carb Search">
         </form>
     </div>
 </script>
@@ -71,21 +79,23 @@
 <script id="results-template" type="text/x-handlebars-template">
     {{#if allowed}}
         <span class="allowed">
-            <strong><span>RT {{name}}</span></strong> belongs to {{allowed_in_moderation}}
+            <strong><span>{{name}}</span></strong> is allowed on the Slow Carb Diet
+            {{#if allowed_in_moderation}}
+                but only in moderation.
             {{/if}}
         </span>
     {{else}}
         <span class="not-allowed">
-            <strong><span>{{name}}</span></strong> is not listed in our registry.
+            <strong><span>{{name}}</span></strong> is not allowed on the Slow Carb Diet
         </span>
     {{/if}}
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.0/handlebars.min.js"></script 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.0/handlebars.min.js"></script>
 <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<script src="http://bridnap.github.io/rtsearch/js/app.js"></script>
+<script src="js/app.js"></script>
 <script>
 $(function() {
     App.init();
