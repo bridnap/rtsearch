@@ -60,7 +60,7 @@ var App = {
         var context = {
             name: query,
             allowed: false,
-            allowed_in_moderation: false
+            allowed_in_moderation: false,
             address: false
         };
 
