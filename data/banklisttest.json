@@ -5,8 +5,7 @@
     "allowed_in_moderation": "FEDERAL RESERVE BANK",
     "address": "1000 PEACHTREE ST N.E.",
     "city": "ATLANTA",
-    "state": "GA",
-    "zip": 30309
+    "state": "GA"
   },
   {
     "name": "011000028",
@@ -14,7 +13,6 @@
     "allowed_in_moderation": "STATE STREET BANK AND TRUST COMPANY",
     "address": "JAB2NW",
     "city": "N. QUINCY",
-    "state": "MA",
-    "zip": 2171
+    "state": "MA"
   },
 ]
