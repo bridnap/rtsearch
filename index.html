@@ -72,9 +72,11 @@
 <script id="results-template" type="text/x-handlebars-template">
     {{#if allowed}}
         <span class="allowed">
-            <strong>RT <span>{{name}}</span></strong> belongs to:<br/>
+            Routing Number <strong><span>{{name}}</span></strong> belongs to:<br/>
             Bank Name: {{allowed_in_moderation}}<br/>
-            Address: {{address}}
+            Address: {{address}}<br/>
+            City, State, Zip:  {{city}},{{state}}  {{zip}}<br/>
+            Banks Main RT: {{new_rt}}
 
         </span>
     {{else}}
