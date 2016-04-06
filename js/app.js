@@ -58,19 +58,19 @@ var App = {
     },
     search: function(query) {
         var context = {
-            rt: query,
+            name: query,
             allowed: false,
-            bank_name: false
+            allowed_in_moderation: false
         };
 
         var results = App.foods.filter(function(food) {
-            return (query.toLowerCase() == food.rt.toLowerCase());
+            return (query.toLowerCase() == food.name.toLowerCase());
         });
 
         if(results.length > 0) {
-            context.rt = results[0].rt;
+            context.name = results[0].name;
             context.allowed = true;
-            context.bank_name = results[0].bank_name;
+            context.allowed_in_moderation = results[0].allowed_in_moderation;
         }
 
         return context;

@@ -72,11 +72,11 @@
 <script id="results-template" type="text/x-handlebars-template">
     {{#if allowed}}
         <span class="allowed">
-            <strong>RT <span>{{rt}}</span></strong> belongs to:<br/> {{bank_name}}
+            <strong>RT <span>{{name}}</span></strong> belongs to:<br/> {{allowed_in_moderation}}
         </span>
     {{else}}
         <span class="not-allowed">
-            <strong><span>RT {{rt}}</span></strong> was not found in our database.  Try again!
+            <strong><span>RT {{name}}</span></strong> was not found in our database.  Try again!
         </span>
     {{/if}}
 </script>
