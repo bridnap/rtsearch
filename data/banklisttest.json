@@ -6,7 +6,7 @@
     "address": "1000 PEACHTREE ST N.E.",
     "city": "ATLANTA",
     "state": "GA",
-    "zip": 30309
+    "zip": "30309"
   },
   {
     "name": "011000028",
@@ -15,6 +15,6 @@
     "address": "JAB2NW",
     "city": "N. QUINCY",
     "state": "MA",
-    "zip": 2171
+    "zip": "2171"
   }
   ]
