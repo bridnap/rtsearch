@@ -1,10 +1,10 @@
 [
   {
-    "name": "011000015",
-    "allowed_in_moderation": "FEDERAL RESERVE BANK"
+    "allowed_in_moderation": "FEDERAL RESERVE BANK",
+    "name": "011000015" 
   },
   {
+    "allowed_in_moderation": "STATE STREET BANK AND TRUST COMPANY",
     "name": "011000028",
-    "allowed_in_moderation": "STATE STREET BANK AND TRUST COMPANY"
   },
 ]
