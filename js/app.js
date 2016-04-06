@@ -61,6 +61,7 @@ var App = {
             name: query,
             allowed: false,
             allowed_in_moderation: false
+            address: false
         };
 
         var results = App.foods.filter(function(food) {
@@ -71,6 +72,7 @@ var App = {
             context.name = results[0].name;
             context.allowed = true;
             context.allowed_in_moderation = results[0].allowed_in_moderation;
+            context.address = results[0].address;
         }
 
         return context;
