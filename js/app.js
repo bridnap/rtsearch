@@ -68,7 +68,7 @@ var App = {
         });
 
         if(results.length > 0) {
-            context.rt = results[0].name;
+            context.rt = results[0].rt;
             context.allowed = true;
             context.bank_name = results[0].bank_name;
         }
