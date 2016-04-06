@@ -1,18 +1,10 @@
 [
   {
     "name": "011000015",
-    "new_rt": "NA"
-    "allowed_in_moderation": "FEDERAL RESERVE BANK",
-    "address": "1000 PEACHTREE ST N.E.",
-    "city": "ATLANTA",
-    "state": "GA"
+    "allowed_in_moderation": "FEDERAL RESERVE BANK"
   },
   {
     "name": "011000028",
-    "new_rt": "NA"
-    "allowed_in_moderation": "STATE STREET BANK AND TRUST COMPANY",
-    "address": "JAB2NW",
-    "city": "N. QUINCY",
-    "state": "MA"
+    "allowed_in_moderation": "STATE STREET BANK AND TRUST COMPANY"
   },
 ]
