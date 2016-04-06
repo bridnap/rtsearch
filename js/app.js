@@ -1,6 +1,6 @@
 var App = {
     foods: [],
-    dataUrl: 'http://bridnap.github.io/rtsearch/data/banklisttest.json',
+    dataUrl: 'http://bridnap.github.io/rtsearch/data/banklist.json',
     init: function () {
         this.fetchFoods();
     },
