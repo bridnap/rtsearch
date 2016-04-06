@@ -72,11 +72,11 @@
 <script id="results-template" type="text/x-handlebars-template">
     {{#if allowed}}
         <span class="allowed">
-            Routing Number <strong><span>{{name}}</span></strong> belongs to:<br/>
-            Bank Name: {{allowed_in_moderation}}<br/>
-            Address: {{address}}<br/>
-            City, State, Zip:  {{city}},{{state}}  {{zip}}<br/>
-            Banks Main RT: {{new_rt}}
+            Routing Number:  <strong><span>{{name}}</span></strong><br/>
+            Bank Name: <strong><span>{{allowed_in_moderation}}</span></strong><br/>
+            Address: <strong><span>{{address}}</span></strong><br/>
+            City, State, Zip: <strong><span>{{city}},{{state}}  {{zip}}</span></strong><br/>
+            Other RT Associated: <strong><span>{{new_rt}}</span></strong>
 
         </span>
     {{else}}
