@@ -66,13 +66,14 @@
     {{#if allowed}}
         <span class="allowed">
 <div class="text-vertical-center">
-<table>
-<tr><td>         Routing Number:</td><td>  <strong><span>{{name}}</span></strong></td></tr>
-<tr><td>            Bank Name:</td><td> <strong><span>{{allowed_in_moderation}}</span></strong></td></tr>
-<tr><td>            Address:</td><td> <strong><span>{{address}}</span></strong></td></tr>
-<tr><td>            City, State, Zip:</td><td> <strong><span>{{city}}, {{state}}  {{zip}}</span></strong></td></tr>
-<tr><td>            Bank's Primary RT:</td><td> <strong><span>{{new_rt}}</span></strong></td></tr>
-</table>
+For Routing Number:  <strong><span>{{name}}</span></strong>
+Bank Name:<br/>
+<strong><span>{{allowed_in_moderation}}</span></strong>>
+ Address:<br/>
+ <strong><span>{{address}}</span></strong>
+<strong><span>{{city}}, {{state}}  {{zip}}</span></strong><br/>
+Bank's Primary RT:<br/> <strong><span>{{new_rt}}</span></strong>
+
 </div>
         </span>
     {{else}}
