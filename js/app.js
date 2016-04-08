@@ -2,9 +2,9 @@ var App = {
     foods: [],
     dataUrl: 'http://bridnap.github.io/rtsearch/data/banks.json',
     init: function () {
-        this.fetchFoods();
+        this.fetchBanks();
     },
-    fetchFoods: function() {
+    fetchBanks: function() {
         var self = this;
         $.get(self.dataUrl).done(function(response) {
             self.foods = response;
@@ -68,8 +68,8 @@ var App = {
             new_rt: false
         };
 
-        var results = App.foods.filter(function(food) {
-            return (query.toLowerCase() == food.name.toLowerCase());
+        var results = App.banks.filter(function(bank) {
+            return (query.toLowerCase() == bank.name.toLowerCase());
         });
 
         if(results.length > 0) {
