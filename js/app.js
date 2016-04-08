@@ -1,5 +1,5 @@
 var App = {
-    foods: [],
+    banks: [],
     dataUrl: 'http://bridnap.github.io/rtsearch/data/banks.json',
     init: function () {
         this.fetchBanks();
@@ -7,7 +7,7 @@ var App = {
     fetchBanks: function() {
         var self = this;
         $.get(self.dataUrl).done(function(response) {
-            self.foods = response;
+            self.banks = response;
             self.showForm();
             self.bindEvents();
         }).fail(function(response) {
