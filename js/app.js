@@ -60,7 +60,7 @@ var App = {
         var context = {
             name: query,
             allowed: false,
-            allowed_in_moderation: false,
+            bank_name: false,
             address: false,
             city: false,
             state: false,
@@ -75,7 +75,7 @@ var App = {
         if(results.length > 0) {
             context.name = results[0].name;
             context.allowed = true;
-            context.allowed_in_moderation = results[0].allowed_in_moderation;
+            context.bank_name = results[0].bank_name;
             context.address = results[0].address;
             context.city = results[0].city;
             context.state = results[0].state;
