@@ -64,7 +64,6 @@ var App = {
             address: false,
             city: false,
             state: false,
-            zip: false,
             new_rt: false
         };
 
@@ -79,7 +78,6 @@ var App = {
             context.address = results[0].address;
             context.city = results[0].city;
             context.state = results[0].state;
-            context.zip = results[0].zip;
             context.new_rt = results[0].new_rt;
 
         }
